@@ -40,7 +40,7 @@ You can use the Database Linter to check your database for issues such as missin
 In the dashboard, navigate to [Database Linter](https://supabase.com/dashboard/project/_/database/linter) under Database. The linter runs automatically. You can also manually rerun it after you've resolved issues.
 `.trim()
 
-const getBasename = (path: string) => path.split('/').at(-1).replace(/\.md$/, '')
+const getBasename = (path: string) => path.split('/').at(-1)!.replace(/\.md$/, '')
 
 export default function ProjectLinterDocs({
   intro,
